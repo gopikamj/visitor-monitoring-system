@@ -1,0 +1,413 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block title %}Home - Visitor Monitoring System{% endblock %}
+
+{% block content %}
+    <!-- Hero Section Start -->
+    <div class="hero dark-section parallaxie">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- Hero Content Box Start -->
+                    <div class="hero-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">AI-Powered Security</h3>
+                            <h1 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque">Intelligent Visitor Monitoring System</h1>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">Advanced Face Recognition, Emotion Analysis, and Weapon Detection for the ultimate security of your premises. Real-time monitoring with IoT Alert integration.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- Hero Content Body Start -->
+                        <div class="hero-body wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- Hero Button Start -->
+                            <div class="hero-btn">
+                                <form action="" method="post">
+                                    {% csrf_token %}
+                                <input type="submit" class="btn-default" value="Get started now">
+                                </form>
+                            </div>
+                            <!-- Hero Button End -->
+
+                            <!-- Video Play Button Start -->
+                            <div class="video-play-button">
+                                <a href="javascript:void(0)" class="popup-video disabled-link" data-cursor-text="Play">
+                                    <i class="fa-solid fa-play"></i>
+                                </a>
+                                <p>watch video</p>
+                            </div>
+                            <!-- Video Play Button End -->
+                        </div>
+                        <!-- Hero Content Body End -->
+                    </div>
+                    <!-- Hero Content Box End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <figure>
+                            <img src="{% static 'images/hero-image.png' %}" alt="">
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Best Service Section Start -->
+    <div class="best-services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- Best Service Box Start -->
+                    <div class="best-services-box">
+                        <!-- Best Service Item Start -->
+                        <div class="best-service-item wow fadeInUp">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-best-service-1.svg' %}" alt="">
+                            </div>
+                            <div class="best-service-item-content">
+                                <h3>Face Recognition Module</h3>
+                            </div>
+                        </div>
+                        <!-- Best Service Item End -->
+
+                        <!-- Best Service Item Start -->
+                        <div class="best-service-item wow fadeInUp" data-wow-delay="0.2s">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-best-service-2.svg' %}" alt="">
+                            </div>
+                            <div class="best-service-item-content">
+                                <h3>Real-Time Weapon Detection</h3>
+                            </div>
+                        </div>
+                        <!-- Best Service Item End -->
+
+                        <!-- Best Service Item Start -->
+                        <div class="best-service-item wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-best-service-3.svg' %}" alt="">
+                            </div>
+                            <div class="best-service-item-content">
+                                <h3>Emotion Analysis & Alerts</h3>
+                            </div>
+                        </div>
+                        <!-- Best Service Item End -->
+                    </div>
+                    <!-- Best Service Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Best Service Section End -->
+
+    <!-- About Us Section Start -->
+    <div class="about-us">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <!-- About Us Images Start -->
+                    <div class="about-us-images">
+                        <!-- About Image 1 Start -->
+                        <div class="about-img-1">
+                            <figure class="image-anime reveal">
+                                <img src="{% static 'images/about-img-1.jpg' %}" alt="">
+                            </figure>
+
+                            <!-- Experience Circle Start -->
+                            <div class="company-experience-circle">
+                                <img src="{% static 'images/experience-circle.svg' %}" alt="">
+                            </div>
+                            <!-- Experience Circle End -->      
+                        </div>
+                        <!-- About Image 1 End -->
+
+                        <!-- About Image 2 Start -->
+                        <div class="about-img-2">
+                            <figure class="image-anime reveal">
+                                <img src="{% static 'images/about-img-2.jpg' %}" alt="">
+                            </figure>
+                        </div>
+                        <!-- About Image 2 End -->                  
+                    </div>
+                    <!-- About Us Images End -->
+                </div>
+
+                <div class="col-lg-6">
+                    <!-- Hero Content Box Start -->
+                    <div class="about-us-content">
+                        <!-- Section Title Start -->
+                        <div class="section-title">
+                            <h3 class="wow fadeInUp">About us</h3>
+                            <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque"><span>Protecting homes</span>, businesses and peace</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.4s">We specialize in providing top-quality security and CCTV solutions to safeguard your home and business. Our mission is to ensure peace of mind with reliable, innovative, and tailored protection systems.</p>
+                        </div>
+                        <!-- Section Title End -->
+
+                        <!-- About Experience Box Start -->
+                        <div class="about-experience-box wow fadeInUp" data-wow-delay="0.6s">
+                            <!-- About Experience Image Start -->
+                            <div class="about-experience-image">
+                                <figure class="image-anime reveal">
+                                    <img src="{% static 'images/about-experience-image.jpg' %}" alt="">
+                                </figure>
+                            </div>
+                            <!-- About Experience Image End -->
+
+                            <!-- About Experience Item Start -->
+                            <div class="about-experience-item">
+                                <div class="icon-box">
+                                    <img src="{% static 'images/icon-about-experience.svg' %}" alt="">
+                                </div>
+                                <div class="about-experience-content">
+                                    <h3>We Have More Than <span class="counter">25</span>+ Years of CCTV Services Experience</h3>
+                                </div>
+                            </div>
+                            <!-- About Experience Item End -->
+                        </div>
+                        <!-- About Experience Box End -->
+
+                        <!-- About Us Body Start -->
+                        <div class="about-us-body wow fadeInUp" data-wow-delay="0.8s">
+                            <!-- About Contact Box Start -->
+                            <div class="about-contact-box">
+                                <div class="icon-box">
+                                    <img src="{% static 'images/icon-about-contact.svg' %}" alt="">
+                                </div>
+                                <div class="about-contact-box-content">
+                                    <p>Call Directly 24/7</p>
+                                    <h3><a href="tel:456789254">+(1) 456 789 254</a></h3>
+                                </div>
+                            </div>
+                            <!-- About Contact Box End -->
+
+                            <!-- About Contact Button Start -->
+                            <div class="about-us-btn">
+                                <a href="javascript:void(0)" class="btn-default disabled-link">more about</a>
+                            </div>
+                            <!-- About Contact Button End -->
+                        </div>
+                        <!-- About Us Body End -->
+                    </div>
+                    <!-- Hero Content Box End -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Us Section End -->
+
+    <!-- Our Services Section Start -->
+    <div class="our-services">
+        <div class="container">
+            <div class="row section-row align-items-center">
+                <div class="col-lg-12">
+                    <!-- Section Title Start -->
+                    <div class="section-title section-title-center">
+                        <h3 class="wow fadeInUp">services</h3>
+                        <h2 class="wow fadeInUp" data-wow-delay="0.2s" data-cursor="-opaque"><span>Comprehensive security</span> and surveillance solutions</h2>
+                    </div>
+                    <!-- Section Title End -->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="#" data-cursor-text="View">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-1.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-1.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">Face Detection & Recog.</a></h3>
+                                <p>Identify known, unknown, and blacklisted visitors instantly using advanced OpenCV algorithms.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                      
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.2s">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="javascript:void(0)" data-cursor-text="View" class="disabled-link">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-2.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-2.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">Emotion Detection</a></h3>
+                                <p>Analyze facial expressions to detect unusual behavior (Fear, Anger, Nervousness) for risk assessment.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                       
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.4s">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="javascript:void(0)" data-cursor-text="View" class="disabled-link">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-3.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-3.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">Weapon Detection</a></h3>
+                                <p>Real-time deep learning models (YOLO) to detect weapons like knives and guns with instant alerts.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                         
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.6s">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="javascript:void(0)" data-cursor-text="View" class="disabled-link">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-4.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-4.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">IoT Hardware Alerts</a></h3>
+                                <p>Integrated with Arduino/Raspberry Pi to trigger physical buzzers, LEDs, and speakers on site.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                      
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="0.8s">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="javascript:void(0)" data-cursor-text="View" class="disabled-link">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-5.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-5.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">Live Monitoring Dashboard</a></h3>
+                                <p>Centralized admin dashboard for live video streaming, alert management, and system status.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                       
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <!-- Service Item Start -->
+                    <div class="service-item wow fadeInUp" data-wow-delay="1s">
+                        <!-- Service Image Start -->
+                        <div class="service-image">
+                            <a href="javascript:void(0)" data-cursor-text="View" class="disabled-link">
+                                <figure class="image-anime">
+                                    <img src="{% static 'images/service-image-6.jpg' %}" alt="">
+                                </figure>
+                            </a>                            
+                        </div>
+                        <!-- Service Image End -->
+
+                        <!-- Service Body Start -->
+                        <div class="service-body">
+                            <div class="icon-box">
+                                <img src="{% static 'images/icon-service-item-6.svg' %}" alt="">
+                            </div>        
+                            <div class="service-content">
+                                <h3><a href="javascript:void(0)" class="disabled-link">Comprehensive Logging</a></h3>
+                                <p>Secure database storage for all visitor logs, timestamps, images, and detection events.</p>
+                            </div>
+                            <div class="service-btn">
+                                <a href="javascript:void(0)" class="readmore-btn disabled-link">Discover More</a>
+                            </div>                         
+                        </div>
+                        <!-- Service Body End -->
+                    </div>
+                    <!-- Service Item End -->
+                </div>
+
+                <div class="col-lg-12">
+                    <!-- Our Services Footer Start -->
+                    <div class="section-footer-text wow fadeInUp" data-wow-delay="1.2s">
+                        <p><span>Free</span>Let's make something great work together.<a href="javascript:void(0)" class="disabled-link">get free quote</a></p>
+                    </div>
+                    <!-- Our Services Footer End -->
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- Our Services Section End -->
+{% endblock %}
